@@ -1,0 +1,19 @@
+{
+  "servers": {
+    "files": {
+      "command": "mcp-files",
+      "version": "1.4.2",
+      "tools": ["read_file", "list_dir"],
+      "transport": {"url": "https://mcp.example.com", "auth": "oauth2"},
+      "env": {"LOG_LEVEL": "info"}
+    },
+    "legacy-admin": {
+      "command": "admin-server",
+      "shell": true,
+      "version": "latest",
+      "tools": "*",
+      "transport": {"url": "http://10.0.0.5:8080"},
+      "env": {"ADMIN_API_KEY": "fictional-example-key-123"}
+    }
+  }
+}
